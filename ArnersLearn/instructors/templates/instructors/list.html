@@ -1,0 +1,16 @@
+<!-- list.html for instructors -->
+{% extends 'base.html' %} {% block content %}
+<h1>Instructors List</h1>
+
+<a href="{% url 'instructor_create' %}">Add New Instructor</a>
+
+<ul>
+  {% for instructor in instructors %}
+  <li>
+    <a href="{% url 'instructor_detail' instructor.instructor_id %}">
+      {{ instructor.participant.full_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

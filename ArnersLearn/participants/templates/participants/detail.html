@@ -1,0 +1,11 @@
+<!-- detail.html for participants -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ participant.full_name }}</h1>
+
+<p>Email: {{ participant.email }}</p>
+<p>Gender: {{ participant.get_gender_display }}</p>
+<!-- ... other fields ... -->
+
+<a href="{% url 'participant_edit' participant.id %}">Edit</a>
+<a href="{% url 'participant_delete' participant.id %}">Delete</a>
+{% endblock %}

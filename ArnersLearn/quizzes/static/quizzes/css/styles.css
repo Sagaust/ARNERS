@@ -1,0 +1,15 @@
+/* Add your styles here */
+/* quizzes/static/quizzes/css/styles.css */
+
+.quiz-card {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.result-card {
+    padding: 16px;
+    border: 1px solid green;
+    border-radius: 8px;
+}

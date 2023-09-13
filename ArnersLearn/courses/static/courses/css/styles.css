@@ -1,0 +1,28 @@
+/* Add your styles here */
+/* courses/static/courses/css/styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Course card styles */
+.course-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Course title styles */
+.course-title {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+/* Course description styles */
+.course-description {
+    color: #666;
+    font-size: 0.9em;
+}

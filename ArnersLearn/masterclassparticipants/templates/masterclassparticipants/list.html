@@ -1,0 +1,19 @@
+<!-- list.html for masterclassparticipants -->
+{% extends 'base.html' %} {% block content %}
+<h1>Masterclass Participants</h1>
+
+<a href="{% url 'masterclassparticipant_create' %}">Join a Masterclass</a>
+
+<ul>
+  {% for masterclassparticipant in masterclassparticipants %}
+  <li>
+    <a
+      href="{% url 'masterclassparticipant_detail' masterclassparticipant.id %}"
+    >
+      {{ masterclassparticipant.masterclass.masterclass_name }} - {{
+      masterclassparticipant.participant.full_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!-- detail.html for masterclassparticipants -->
+{% extends 'base.html' %} {% block content %}
+<h1>
+  {{ masterclassparticipant.masterclass.masterclass_name }} - {{
+  masterclassparticipant.participant.full_name }}
+</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'masterclassparticipant_edit' masterclassparticipant.id %}"
+  >Edit</a
+>
+<a href="{% url 'masterclassparticipant_delete' masterclassparticipant.id %}"
+  >Remove</a
+>
+{% endblock %}

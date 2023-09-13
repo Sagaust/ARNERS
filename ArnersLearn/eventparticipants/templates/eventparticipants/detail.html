@@ -1,0 +1,12 @@
+<!-- detail.html for eventparticipants -->
+{% extends 'base.html' %} {% block content %}
+<h1>
+  {{ eventparticipant.event.event_name }} - {{
+  eventparticipant.participant.full_name }}
+</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'eventparticipant_edit' eventparticipant.id %}">Edit</a>
+<a href="{% url 'eventparticipant_delete' eventparticipant.id %}">Remove</a>
+{% endblock %}

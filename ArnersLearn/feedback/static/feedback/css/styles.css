@@ -1,0 +1,13 @@
+/* Add your styles here */
+/* feedback/static/feedback/css/styles.css */
+
+.feedback-form {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.feedback-display {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}

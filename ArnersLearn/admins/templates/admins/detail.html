@@ -1,0 +1,9 @@
+<!-- detail.html for admins -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ admin.full_name }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'admin_edit' admin.admin_id %}">Edit</a>
+<a href="{% url 'admin_delete' admin.admin_id %}">Delete</a>
+{% endblock %}

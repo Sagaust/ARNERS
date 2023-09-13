@@ -1,0 +1,16 @@
+<!-- list.html for events -->
+{% extends 'base.html' %} {% block content %}
+<h1>Events List</h1>
+
+<a href="{% url 'event_create' %}">Add New Event</a>
+
+<ul>
+  {% for event in events %}
+  <li>
+    <a href="{% url 'event_detail' event.event_id %}">
+      {{ event.event_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

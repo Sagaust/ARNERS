@@ -1,0 +1,28 @@
+/* Add your styles here */
+/* participants/static/participants/css/styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Table styles */
+.participants-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.participants-table th,
+.participants-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}

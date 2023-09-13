@@ -1,0 +1,16 @@
+// Add your JavaScript code here
+/* courseenrollment/static/courseenrollment/css/styles.css */
+
+/* Enrollment button styles */
+.enroll-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Enrolled courses list styles */
+.enrolled-list {
+    list-style-type: none;
+    padding: 0;
+}

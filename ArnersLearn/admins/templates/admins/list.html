@@ -1,0 +1,16 @@
+<!-- list.html for admins -->
+{% extends 'base.html' %} {% block content %}
+<h1>Admins List</h1>
+
+<a href="{% url 'admin_create' %}">Add New Admin</a>
+
+<ul>
+  {% for admin in admins %}
+  <li>
+    <a href="{% url 'admin_detail' admin.admin_id %}">
+      {{ admin.full_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

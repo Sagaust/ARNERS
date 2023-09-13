@@ -1,0 +1,15 @@
+/* Add your styles here */
+/* assignments/static/assignments/css/styles.css */
+
+.assignment-card {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.submission-form {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}

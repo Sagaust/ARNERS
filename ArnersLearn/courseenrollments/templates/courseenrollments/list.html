@@ -1,0 +1,17 @@
+<!-- list.html for courseenrollments -->
+{% extends 'base.html' %} {% block content %}
+<h1>Course Enrollments</h1>
+
+<a href="{% url 'courseenrollment_create' %}">Enroll in a Course</a>
+
+<ul>
+  {% for enrollment in enrollments %}
+  <li>
+    <a href="{% url 'courseenrollment_detail' enrollment.enrollment_id %}">
+      {{ enrollment.course.course_name }} - {{ enrollment.participant.full_name
+      }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

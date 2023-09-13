@@ -1,0 +1,13 @@
+<!-- detail.html for courseenrollments -->
+{% extends 'base.html' %} {% block content %}
+<h1>
+  {{ enrollment.course.course_name }} - {{ enrollment.participant.full_name }}
+</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'courseenrollment_edit' enrollment.enrollment_id %}">Edit</a>
+<a href="{% url 'courseenrollment_delete' enrollment.enrollment_id %}"
+  >Withdraw</a
+>
+{% endblock %}

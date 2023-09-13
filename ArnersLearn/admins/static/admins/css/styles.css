@@ -1,0 +1,16 @@
+/* Add your styles here */
+/* admin/static/admin/css/styles.css */
+
+/* Admin Dashboard styles */
+.dashboard-panel {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+/* Admin title styles */
+.admin-title {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}

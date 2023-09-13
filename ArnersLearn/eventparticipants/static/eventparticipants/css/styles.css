@@ -1,0 +1,12 @@
+/* Add your styles here */
+/* eventparticipants/static/eventparticipants/css/styles.css */
+
+.participation-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.participation-item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}

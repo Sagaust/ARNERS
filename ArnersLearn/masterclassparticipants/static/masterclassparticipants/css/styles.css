@@ -1,0 +1,12 @@
+/* Add your styles here */
+/* masterclassparticipants/static/masterclassparticipants/css/styles.css */
+
+.participant-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.participant-item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}

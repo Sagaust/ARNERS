@@ -1,0 +1,9 @@
+<!-- detail.html for quizzes -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ quiz.title }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'quiz_edit' quiz.id %}">Edit</a>
+<a href="{% url 'quiz_delete' quiz.id %}">Delete</a>
+{% endblock %}

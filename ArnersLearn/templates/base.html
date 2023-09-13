@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArnersLearn</title>
+    <!-- Link to CSS files, Bootstrap, or other stylesheets if you have them -->
+    <link rel="stylesheet" href="{% static 'path_to_your_css_file.css' %}" />
+  </head>
+
+  <body>
+    <header>
+      <!-- You can add a navbar or other header elements here -->
+      <h1>Welcome to ArnersLearn</h1>
+    </header>
+
+    <nav>
+      <!-- Navigation links -->
+      <a href="{% url 'home' %}">Home</a>
+      <!-- Add other links as needed -->
+    </nav>
+
+    <main>
+      <!-- This block allows other templates to insert content -->
+      {% block content %} {% endblock %}
+    </main>
+
+    <footer>
+      <!-- Footer content -->
+      <p>&copy; 2023 ArnersLearn. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript files, if you have any -->
+    <script src="{% static 'path_to_your_js_file.js' %}"></script>
+  </body>
+</html>

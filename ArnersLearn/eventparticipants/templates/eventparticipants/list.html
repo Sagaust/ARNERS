@@ -1,0 +1,17 @@
+<!-- list.html for eventparticipants -->
+{% extends 'base.html' %} {% block content %}
+<h1>Event Participants</h1>
+
+<a href="{% url 'eventparticipant_create' %}">Register for an Event</a>
+
+<ul>
+  {% for eventparticipant in eventparticipants %}
+  <li>
+    <a href="{% url 'eventparticipant_detail' eventparticipant.id %}">
+      {{ eventparticipant.event.event_name }} - {{
+      eventparticipant.participant.full_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

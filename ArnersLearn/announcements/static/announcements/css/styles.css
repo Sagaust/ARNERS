@@ -1,0 +1,9 @@
+/* Add your styles here */
+/* announcements/static/announcements/css/styles.css */
+
+.announcement-card {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}

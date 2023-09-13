@@ -1,0 +1,9 @@
+<!-- detail.html for masterclasses -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ masterclass.masterclass_name }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'masterclass_edit' masterclass.masterclass_id %}">Edit</a>
+<a href="{% url 'masterclass_delete' masterclass.masterclass_id %}">Delete</a>
+{% endblock %}

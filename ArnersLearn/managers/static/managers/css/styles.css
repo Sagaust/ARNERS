@@ -1,0 +1,16 @@
+/* Add your styles here */
+/* manager/static/manager/css/styles.css */
+
+/* Dashboard panel styles */
+.dashboard-panel {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+/* Dashboard title styles */
+.dashboard-title {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}

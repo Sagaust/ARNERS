@@ -1,0 +1,16 @@
+/* Add your styles here */
+/* coursematerials/static/coursematerials/css/styles.css */
+
+/* Material card styles */
+.material-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+/* Material title styles */
+.material-title {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}

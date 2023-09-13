@@ -1,0 +1,9 @@
+<!-- detail.html for feedback -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ feedback.title }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'feedback_edit' feedback.id %}">Edit</a>
+<a href="{% url 'feedback_delete' feedback.id %}">Delete</a>
+{% endblock %}

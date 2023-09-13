@@ -1,0 +1,17 @@
+<!-- list.html for certificates -->
+{% extends 'base.html' %} {% block content %}
+<h1>Certificates List</h1>
+
+<a href="{% url 'certificate_create' %}">Issue New Certificate</a>
+
+<ul>
+  {% for certificate in certificates %}
+  <li>
+    <a href="{% url 'certificate_detail' certificate.certificate_id %}">
+      {{ certificate.participant.full_name }} - {{
+      certificate.course.course_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

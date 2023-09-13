@@ -1,0 +1,16 @@
+<!-- list.html for managers -->
+{% extends 'base.html' %} {% block content %}
+<h1>Managers List</h1>
+
+<a href="{% url 'manager_create' %}">Add New Manager</a>
+
+<ul>
+  {% for manager in managers %}
+  <li>
+    <a href="{% url 'manager_detail' manager.manager_id %}">
+      {{ manager.full_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

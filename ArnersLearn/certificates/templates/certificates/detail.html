@@ -1,0 +1,11 @@
+<!-- detail.html for certificates -->
+{% extends 'base.html' %} {% block content %}
+<h1>
+  {{ certificate.participant.full_name }} - {{ certificate.course.course_name }}
+</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'certificate_edit' certificate.certificate_id %}">Edit</a>
+<a href="{% url 'certificate_delete' certificate.certificate_id %}">Delete</a>
+{% endblock %}

@@ -1,0 +1,9 @@
+<!-- detail.html for coursematerials -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ material.course.course_name }} - {{ material.title }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'coursematerial_edit' material.material_id %}">Edit</a>
+<a href="{% url 'coursematerial_delete' material.material_id %}">Delete</a>
+{% endblock %}

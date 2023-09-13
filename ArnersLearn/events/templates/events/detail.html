@@ -1,0 +1,9 @@
+<!-- detail.html for events -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ event.event_name }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'event_edit' event.event_id %}">Edit</a>
+<a href="{% url 'event_delete' event.event_id %}">Delete</a>
+{% endblock %}

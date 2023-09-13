@@ -1,0 +1,64 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, p, ul, ol, li, form, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make sure images don't exceed their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Set a default background and text color */
+body {
+  background-color: #f8f9fa; /* Bootstrap's light gray */
+  color: #343a40; /* Bootstrap's dark gray */
+  font-family: Arial, sans-serif;
+}
+
+/* Style headers */
+h1, h2, h3, h4 {
+  margin-bottom: 20px;
+}
+
+/* Add some padding and center text in the header and footer */
+.header, .footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style buttons to match the color scheme */
+button {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Optional: if you want rounded corners */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* A darker blue for hover state */
+}
+
+/* Add some custom spacing classes that can be used across components */
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom class to style links inside text */
+.custom-link {
+  color: #007bff; /* Bootstrap primary blue */
+  text-decoration: underline;
+}
+
+.custom-link:hover {
+  text-decoration: none;
+}

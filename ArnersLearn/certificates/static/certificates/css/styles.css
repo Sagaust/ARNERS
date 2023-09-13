@@ -1,0 +1,16 @@
+/* Add your styles here */
+/* certificates/static/certificates/css/styles.css */
+
+/* Certificate card styles */
+.certificate-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+/* Certificate title styles */
+.certificate-title {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}

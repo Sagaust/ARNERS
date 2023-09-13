@@ -1,0 +1,9 @@
+<!-- detail.html for instructors -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ instructor.participant.full_name }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'instructor_edit' instructor.instructor_id %}">Edit</a>
+<a href="{% url 'instructor_delete' instructor.instructor_id %}">Delete</a>
+{% endblock %}

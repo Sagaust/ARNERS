@@ -1,0 +1,9 @@
+<!-- detail.html for assignments -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ assignment.title }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'assignment_edit' assignment.id %}">Edit</a>
+<a href="{% url 'assignment_delete' assignment.id %}">Delete</a>
+{% endblock %}

@@ -1,0 +1,14 @@
+<!-- list.html for feedback -->
+{% extends 'base.html' %} {% block content %}
+<h1>Feedbacks</h1>
+
+<a href="{% url 'feedback_create' %}">Give Feedback</a>
+
+<ul>
+  {% for feedback in feedbacks %}
+  <li>
+    <a href="{% url 'feedback_detail' feedback.id %}"> {{ feedback.title }} </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

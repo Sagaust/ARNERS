@@ -1,0 +1,9 @@
+<!-- detail.html for announcements -->
+{% extends 'base.html' %} {% block content %}
+<h1>{{ announcement.title }}</h1>
+
+<!-- other fields -->
+
+<a href="{% url 'announcement_edit' announcement.id %}">Edit</a>
+<a href="{% url 'announcement_delete' announcement.id %}">Delete</a>
+{% endblock %}

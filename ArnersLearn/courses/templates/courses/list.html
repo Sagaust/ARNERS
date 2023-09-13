@@ -1,0 +1,23 @@
+<!-- list.html for courses -->
+{% extends 'base.html' %} {% block content %}
+<h1>Courses List</h1>
+
+<a href="{% url 'create_course' %}">Add New Course</a>
+
+<ul>
+  {% for course in courses %}
+  <li>
+    <!-- Assuming you have a course_detail view and URL pattern -->
+    <a href="{% url 'course_detail' course.course_id %}">
+      {{ course.course_name }}
+    </a>
+
+    <ul>
+      {% for module in course.modules.all %}
+      <li>{{ module.module_name }}</li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
